@@ -49,10 +49,11 @@ else:
 master_pwd = input("Question 3 - Create Master Password: ")
 # Write logic here:
 length_ok = len(master_pwd) >=10 and len(master_pwd) <=20
-log_out="login" not in master_pwd.lower()
-begin_with=master_pwd[0]== "!" and master_pwd [0]== "@"
+log_out="login" not in master_pwd 
+begin_with= master_pwd[0]== "!" or master_pwd[0]== "@"
 if length_ok and log_out and begin_with :
-    print("Password Robut!")
+    print("Password Robust!")
 else:
     print("weakness Detected")
+
 
